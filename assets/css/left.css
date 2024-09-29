@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui;
+  background-color: black;
+}
+.container {
+  margin-inline: 165px;
+  text-align: center;
+  margin-top: 120px;
+  position: relative;
+  color: #fff;
+}
+.container-left {
+  background-color: red;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  animation: sa 5s infinite;
+  transition: all;
+  position: relative;
+}
+@keyframes sa {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+.container-left2 {
+  background-color: red;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation: as 5s infinite;
+  margin-top: 40px;
+}
+@keyframes as {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 50px;
+  }
+  100% {
+    right: 100px;
+  }
+}
+.container-left3 {
+  background-color: red;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation: ca 5s infinite;
+  margin-bottom: 60px;
+}
+@keyframes ca {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+.container-left4 {
+  background-color: red;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation: cb 5s infinite;
+  margin-top: 200px;
+  /* burdaki margin top animasyonun yavaşlamasına sebep olmaktadır */
+}
+@keyframes cb {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+.container-left5 {
+  background-color: red;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation: cc 10s infinite;
+  margin-top: 40px;
+}
+@keyframes cc {
+  0% {
+    background-color: aqua;
+  }
+  50% {
+    background-color: lightcoral;
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
+.container-left6 {
+  background-color: red;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation: cs 10s infinite;
+  margin-top: 40px;
+  animation-direction: alternate;
+}
+@keyframes cs {
+  0% {
+    left: 0;
+    background-color: rgb(218, 0, 73);
+  }
+
+  50% {
+    left: calc(100% - 100px);
+    background-color: rgb(0, 3, 156);
+  }
+
+  100% {
+    left: 0;
+    background-color: rgb(218, 0, 73);
+  }
+}
+.ease-container {
+  margin-top: 120px;
+  margin-inline: 165px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  color: #fff;
+  border: 1px solid;
+  text-align: center;
+}
+.ease-items {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: #fff;
+  animation: kr 5s infinite;
+  position: relative;
+  text-align: center;
+  animation-timing-function: ease;
+}
+.ease-items1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: #fff;
+  animation: kr 5s infinite;
+  position: relative;
+  text-align: center;
+  animation-timing-function: ease-in;
+}
+.ease-items2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: #fff;
+  animation: kr 5s infinite;
+  position: relative;
+  text-align: center;
+  animation-timing-function: ease-out;
+}
+.ease-items3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: #fff;
+  animation: kr 5s infinite;
+  position: relative;
+  text-align: center;
+  animation-timing-function: ease-in-out;
+}
+.ease-items4 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: #fff;
+  animation: kr 5s infinite;
+  position: relative;
+  text-align: center;
+  animation-timing-function: linear;
+}
+@keyframes kr {
+  0% {
+    left: 0;
+    background-color: rgb(218, 0, 73);
+  }
+
+  50% {
+    left: calc(100% - 100px);
+    background-color: rgb(0, 3, 156);
+  }
+
+  100% {
+    left: 0;
+    background-color: rgb(218, 0, 73);
+  }
+}
+.rotate {
+  margin-top: 120px;
+  margin-inline: 165px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 100px;
+}
+.rotate-items {
+  width: 200px;
+  height: 200px;
+  animation: rotate3 5s infinite;
+  background-color: orange;
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.rotate-items2 {
+  width: 200px;
+  height: 200px;
+  animation: rotate 5s infinite;
+  background-color: orange;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+}
+.rotate-items3 {
+  width: 200px;
+  height: 200px;
+  animation: rotate2 5s infinite;
+  background-color: orange;
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(-180deg);
+  }
+}
+.transform {
+  margin-top: 120px;
+  margin-inline: 165px;
+  color: #212121;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.transform-items {
+  width: 200px;
+  height: 200px;
+  animation: transform 5s infinite;
+  background-color: whitesmoke;
+}
+@keyframes transform {
+  0% {
+    transform: scale(0.5);
+  }
+}
+.rotate span {
+  position: absolute;
+  display: block;
+  background-color: green;
+  width: 100px;
+  height: 1px;
+  top: 200px;
+}
